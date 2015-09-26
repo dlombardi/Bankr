@@ -20,6 +20,9 @@
     margin-bottom: 10px;
     margin-top: 10px;
   }
+  table {
+    margin-left: 50px;
+  }
 
   </style>
 </head>
@@ -68,7 +71,7 @@
           <table>
 
 <% for(var i = 0; i< user.local.transactions.length; i++) { %>
-            <tr>   
+            <tr>
                 <td><strong>$<%= user.local.transactions[i].amount%></strong></td><td> <%= user.local.transactions[i].description%></td><td> <%= user.local.transactions[i].date%> </td>
             </tr>
 <% } %>
